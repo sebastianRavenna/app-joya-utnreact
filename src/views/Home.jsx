@@ -27,7 +27,7 @@ const Home = () => {
 
   return (
     <div className="container p-5">
-      <h1 className="title has-text-centered">Menú de Restaurante</h1>
+      <h1 className="title has-text-centered">Nancy Estepo Joyas</h1>
       <div className="columns is-multiline">
         {products.map(product => (
           <div key={product.id} className="column is-one-quarter">
