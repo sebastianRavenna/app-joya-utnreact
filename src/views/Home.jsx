@@ -42,12 +42,13 @@ const Home = () => {
                 <p className="subtitle is-6">Precio: ${product.price}</p>
                 <p>{product.description}</p>
                 <p><strong>Tamaño:</strong> {product.size}</p>
-                <p>{product.vegetarian ? 'Vegetariano' : 'No vegetariano'}</p>
+                <p>{product.stock ? 'Hay Stock' : 'No hay Stock'}</p>
               </div>
             </div>
           </div>
         ))}
       </div>
+      <a href="/Dashboard" className="button is-primary">Administracion</a>
     </div>
   )
 }

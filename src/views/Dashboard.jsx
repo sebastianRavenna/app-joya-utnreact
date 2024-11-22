@@ -8,7 +8,7 @@ const Dashboard = () => {
     price: 0,
     description: "",
     size: "",
-    vegetarian: false,
+    stock: false,
     image: ""
   }
 
@@ -72,7 +72,7 @@ const Dashboard = () => {
       price: product.price,
       description: product.description,
       size: product.size,
-      vegetarian: product.vegetarian,
+      stock: product.stock,
       image: product.image
     })
     setEditMode(true)
@@ -148,11 +148,11 @@ const Dashboard = () => {
           <label className="checkbox">
             <input
               type="checkbox"
-              name="vegetarian"
-              checked={formData.vegetarian}
+              name="stock"
+              checked={formData.stock}
               onChange={handleChange}
             />
-            {' '}Vegetariano
+            {' '}Hay Stock
           </label>
         </div>
         <div className="field">
@@ -183,7 +183,7 @@ const Dashboard = () => {
             <th>Precio</th>
             <th>Descripción</th>
             <th>Tamaño</th>
-            <th>Vegetariano</th>
+            <th>Hay Stock</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -195,7 +195,7 @@ const Dashboard = () => {
               <td>${product.price}</td>
               <td>{product.description}</td>
               <td>{product.size}</td>
-              <td>{product.vegetarian ? "Sí" : "No"}</td>
+              <td>{product.stock ? "Sí" : "No"}</td>
               <td>
                 <button className="button is-info is-small" onClick={() => handleEdit(product)}>
                   Modificar
@@ -208,6 +208,7 @@ const Dashboard = () => {
           ))}
         </tbody>
       </table>
+      <a href="/" className="button is-primary">Home</a>
     </div>
   )
 }
