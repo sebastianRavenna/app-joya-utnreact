@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from 'firebase/auth';
 
 // Configuración de Firebase proporcionada por Firebase Console
 const firebaseConfig = {
@@ -31,6 +32,7 @@ VITE_APP_ID="1:39910297556:web:f37b0b935f23a6d28e9041"
 
 // Inicializa Firebase
 const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
 // Inicializa Firestore
 const db = getFirestore(app);
@@ -39,3 +41,4 @@ const db = getFirestore(app);
 console.log("Conexión a Firestore establecida:", db);
 
 export default db;
+export { auth };
