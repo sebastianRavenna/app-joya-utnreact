@@ -86,7 +86,11 @@ const Dashboard = () => {
       alert("Producto borrado con éxito...")
       fetchProducts()
     } catch (error) {
+<<<<<<< HEAD
+
+=======
       console.error("Error al borrar el producto:", error)
+>>>>>>> 0ccf8ad (agregando el boton para registrarse)
     }
   }
 
