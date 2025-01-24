@@ -1,9 +1,34 @@
 .padre{
     display: flex;
-    align-items: center;
-    height: 100%;
+    flex-direction: column;
+    align-items:start;
+    justify-content: left;
+    
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: black;
 }
 
 .tamaño-img{
     width: 70%;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding-top: 150px;
+}
+
+button{
+    width: 100%;
+    margin-top: 20px;
 }

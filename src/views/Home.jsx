@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <> 
       { usuario ?
-      <div> correoUsuario = {usuario.mail} 
+      <div> Hola {usuario.email}  
       <div className="container p-5">
         <h1 className="title has-text-centered">Nancy Estepo Joyas</h1>
         <div className="columns is-multiline">

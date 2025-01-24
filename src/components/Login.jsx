@@ -43,6 +43,10 @@ const Login = () => {
             </form>
             </div>
           </div>
+          <div className='register'>
+            <p>Si no tenes una cuenta, registrate aqui</p>
+            <a href="/Register">Registrarse</a>
+          </div>
         </div>
         <div className='column is-8'>
           <img src="login.png" alt="login" className='tamaño-img' />
@@ -54,3 +58,4 @@ const Login = () => {
 
 
 export default Login;
+
