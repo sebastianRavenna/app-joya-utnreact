@@ -12,24 +12,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_APP_ID
 };
 
-/*const firebaseConfig = {
-  apiKey: "AIzaSyBE8rCjdvacHCfHR-rEpbdQp21jrgmHU9A",
-  authDomain: "bar-app-utn.firebaseapp.com",
-  projectId: "bar-app-utn",
-  storageBucket: "bar-app-utn.firebasestorage.app",
-  messagingSenderId: "39910297556",
-  appId: "1:39910297556:web:f37b0b935f23a6d28e9041"
-};
-
-VITE_API_KEY="AIzaSyBE8rCjdvacHCfHR-rEpbdQp21jrgmHU9A"
-VITE_AUTH_DOMAIN="bar-app-utn.firebaseapp.com"
-VITE_PROJECT_ID="bar-app-utn"
-VITE_STORAGE_BUCKET="bar-app-utn.firebasestorage.app"
-VITE_MESSAGING_SENDER_ID="39910297556"
-VITE_APP_ID="1:39910297556:web:f37b0b935f23a6d28e9041"
-*/
-
-
 // Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
